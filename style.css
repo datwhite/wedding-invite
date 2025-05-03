@@ -343,6 +343,8 @@ section.visible {
 
 .details-img {
     /* flex-grow: 2; */
+    max-width: 65px;
+    height: auto;
 }
 
 .details-container p {
