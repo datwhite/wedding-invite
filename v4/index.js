@@ -37,3 +37,18 @@ const observer = new IntersectionObserver((entries, observer) => {
 sections.forEach(section => {
     observer.observe(section);
 });
+
+//Скрипт обращения к гостям по имени
+let params = new URLSearchParams(document.location.search);
+let guestsParam = params.get("guests");
+
+const guests = new Map([
+    ["Чумичевы", "Евгений и Анна"],
+    ["Крюковы", "Виталий и София"],
+    ["Меньшовы", "Эдуард, Татьяна и Кирилл"],
+    ["Поповы", "Игорь и Елена"],
+    ["Лазаревы", "Евгений, Алевтина, Полина и Алина"]
+]);
+
+if (guests.get(guestsParam) != undefined)
+    document.getElementById("guests").innerText = "Дорогие " + guests.get(guestsParam) + "!";
