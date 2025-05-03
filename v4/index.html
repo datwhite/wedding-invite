@@ -22,6 +22,8 @@
 
   <!-- Блоки -->
   <section class="hero">
+    <div id="background-blur"></div>
+    <img class="background-hero asyncImage" src="./img/hero-low.webp" data-src="./img/hero.webp" alt="We">
     <div class="container">
       <p class="names">АРТЁМ И ВИТАЛИЯ</p>
       <div class="title">
@@ -70,13 +72,17 @@
 
 
   <section class="program">
-    <div class="container">
-      <h2>ПРИМЕРНАЯ ПРОГРАММА ДНЯ</h2>
+    <div class="container program-container">
+      <div class="program-title">ПРИМЕРНАЯ ПРОГРАММА ДНЯ</div>
+      <!-- <h2>ПРИМЕРНАЯ ПРОГРАММА ДНЯ</h2> -->
       <ul>
-        <li>Сбор гостей</li>
-        <li>Свадебная церемония</li>
-        <li>Праздничный банкет</li>
-        <li>Окончание</li>
+        <li>Сбор гостей <span><b>15:30</b></span><br>↓</li>
+        <!-- <li>↓</li> -->
+        <li>Свадебная церемония<br>↓</li>
+        <!-- <li>↓</li> -->
+        <li>Праздничный банкет<br>↓</li>
+        <!-- <li>↓</li> -->
+        <li>Окончание <span><b>23:00</b></span></li>
       </ul>
     </div>
   </section>
@@ -86,7 +92,7 @@
       <h2>ЛОКАЦИЯ</h2>
       <p>Наша свадьба пройдет на территории ресторана "Лагуна"</p>
       <p>Адрес: г. Липецк, пл. Мира, д. 1д</p>
-      <iframe src="https://www.google.com/maps?q=г.+Липецк,+пл.+Мира,+д.+1д&output=embed"></iframe>
+      <iframe src="https://www.google.com/maps?q=г.+Липецк,+пл.+Мира,+д.+1Д, Лагуна&output=embed"></iframe>
       <p><em>*Пожалуйста, сообщите нам заранее, если вам потребуется транспорт или вы планируете добираться
           самостоятельно</em></p>
     </div>
@@ -103,17 +109,17 @@
   <section class="confirm">
     <div class="container">
       <h2>ПРИСУТСТВИЕ НА ТОРЖЕСТВЕ</h2>
-      <p>Пожалуйста, подтвердите свое присутствие до 05.07.2025 любым удобным для вас способом.</p>
+      <p>Пожалуйста, подтвердите свое присутствие до <b><u>05.07.2025</u></b> любым удобным для вас способом.</p>
     </div>
   </section>
 
-  <section class="final-photo">
+  <section class="final-photo asyncImage" data-src="./img/final.webp">
     <div class="container">
       <h2>Мы будем рады видеть вас!</h2>
     </div>
   </section>
   <script src="./index.js"></script>
-
+  <script src="./lazy.js"></script>
 </body>
 
 </html>
