@@ -263,6 +263,63 @@ section.visible {
     margin-top: 20px;
 }
 
+.confirm-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.confirm-title {
+    font-size: 36px;
+    font-weight: 600;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.horizontal-line {
+    border-bottom: 1px solid black;
+    width: 250px;
+}
+
+.confirm-text {
+    flex-grow: 2;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.confirm-text p b {
+    font-size: 24px;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;   
+}
+
+.details-title {
+    font-size: 36px;
+    font-weight: 600;
+    align-items: center;
+    /* flex-grow: 1; */
+}
+
+.details-img {
+    /* flex-grow: 2; */
+}
+
+.details-container p {
+    font-size: 20px;
+    /* flex-grow: 2; */
+}
+
 .details,
 .confirm,
 .final-photo {
@@ -294,7 +351,7 @@ section.visible {
 .final-photo .container {
     position: relative;
     z-index: 2;
-    font-size: 24px;
+    font-size: 38px;
 }
 
 @media (max-width: 768px) {
@@ -350,6 +407,34 @@ section.visible {
     .program li {
         margin: 10px 0;
         font-size: 24px;
+    }
+
+    .program li span {
+        font-size: 32px;
+    }
+
+    .details-title {
+        font-size: 32px;
+    }
+    
+    .details-container p {
+        font-size: 24px;
+    }
+
+    .confirm-title {
+        font-size: 32px;
+    }
+    
+    .horizontal-line {
+        width: 150px;
+    }
+    
+    .confirm-text {
+        font-size: 24px;
+    }
+    
+    .confirm-text p b {
+        font-size: 28px;
     }
 
     .final-photo {
@@ -432,5 +517,41 @@ section.visible {
     .program li {
         margin: 5px 0;
         font-size: 18px;
+    }
+
+    .program li span {
+        font-size: 28px;
+    }
+
+    .details-title {
+        font-size: 26px;
+    }
+    
+    .details-container p {
+        font-size: 18px;
+    }
+
+    .confirm-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .confirm-title {
+        font-size: 26px;
+    }
+    
+    .horizontal-line {
+        width: 150px;
+    }
+    
+    .confirm-text {
+        font-size: 18px;
+    }
+    
+    .confirm-text p b {
+        font-size: 20px;
     }
 }
