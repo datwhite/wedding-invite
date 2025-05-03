@@ -7,9 +7,6 @@
       // Start loading image
       const img = new Image();
       img.src = item.dataset.src;
-
-      console.log("item.dataset.src " + item.dataset.src)
-      console.log("item " + item.className)
       // Once image is loaded replace the src of the HTML element
       img.onload = () => {
         item.classList.remove('asyncImage');
