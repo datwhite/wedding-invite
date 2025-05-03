@@ -248,12 +248,18 @@ section.visible {
 .program ul {
     flex-grow: 2;
     list-style: none;
-    /* margin-top: 50px; */
+    margin-top: 50px;
 }
 
-.program li {
-    margin: 10px 0;
-    font-size: 20px;
+.program ul li {
+    /* margin: 10px 0; */
+    font-size: 26px;
+    line-height: 45px;
+}
+
+.program ul li span {
+    font-size: 52px;
+
 }
 
 .location iframe {
@@ -261,6 +267,30 @@ section.visible {
     height: 300px;
     border: 0;
     margin-top: 20px;
+}
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.location-title {
+    font-size: 36px;
+    font-weight: 600;
+    flex-grow: 2;
+    align-items: center;
+}
+
+.location-container p {
+    flex-grow: 1;
+    font-size: 24px;
+}
+
+.location-container iframe {
+    flex-grow: 1;
 }
 
 .confirm-container {
@@ -413,6 +443,14 @@ section.visible {
         font-size: 32px;
     }
 
+    .location-title {
+        font-size: 32px;
+    }
+    
+    .location-container p {
+        font-size: 24px;
+    }
+
     .details-title {
         font-size: 32px;
     }
@@ -514,13 +552,29 @@ section.visible {
         font-weight: 600;
     }
 
-    .program li {
-        margin: 5px 0;
+    .program ul {
+        flex-grow: 2;
+        list-style: none;
+        margin-top: 50px;
+    }
+    
+    .program ul li {
+        /* margin: 10px 0; */
         font-size: 18px;
+        line-height: 25px;
+    }
+    
+    .program ul li span {
+        font-size: 32px;
+    
     }
 
-    .program li span {
-        font-size: 28px;
+    .location-title {
+        font-size: 26px;
+    }
+    
+    .location-container p {
+        font-size: 18px;
     }
 
     .details-title {
