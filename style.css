@@ -490,6 +490,20 @@ section.visible {
 }
 
 @media (max-width: 400px) {
+    section {
+        /* min-height: 100vh; */
+        /* scroll-snap-align: start; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* text-align: center; */
+        padding: 30px 20px;
+        /* opacity: 0; */
+        /* transform: translateY(50px); */
+        /* transition: all 1s ease; */
+        /* flex-shrink: 0; */
+    }
+
     .greeting-countdown-section {
         /* height: 100%;
         display: flex;
