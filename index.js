@@ -68,7 +68,7 @@ const guests = new Map([
     ["Лавилина", "Лидия"]
 ]);
 
-if (guests.get(guestsParam) != undefined)
+if (guests.has(guestsParam))
     document.getElementById("guests").innerText = "Дорогие " + guests.get(guestsParam) + "!";
 
 
