@@ -50,7 +50,7 @@ section.visible {
 }
 
 .hero {
-    background: url('./src/img/hero.jpg') center/cover no-repeat;
+    background: url('./img/hero.jpg') center/cover no-repeat;
     color: white;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
     position: relative;
@@ -213,7 +213,7 @@ section.visible {
 }
 
 .final-photo {
-    background: url('./src/img/final.jpg') center/cover no-repeat;
+    background: url('./img/final.jpg') center/cover no-repeat;
     background-position-x: 68%;
     border-left: 500px solid white;
     border-top: 50px solid white;
