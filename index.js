@@ -69,7 +69,12 @@ const guests = new Map([
 ]);
 
 if (guests.has(guestsParam)) {
-    document.getElementById("guests").innerText = "Дорогие " + guests.get(guestsParam) + "!";
+    let dear = "Дорогие ";
+    if (guests.get(guestsParam).split(" ").length < 3)
+        dear = "Дорогая "
+    if (guestsParam == "Матвейкин")
+        dear = "Дорогой "
+    document.getElementById("guests").innerText = dear + guests.get(guestsParam) + "!";
 }    
 
 
