@@ -65,10 +65,11 @@ const guests = new Map([
     ["Тетеревы", "Олег и Ирина"],
     ["Комолых", "Павел, Ольга и Иван"],
     ["Амосовы", "Дмитрий и Инна"],
-    ["Лавилина", "Лидия"]
+    ["Лавилина", "тётя Лидия"]
 ]);
 
-if (guests.has(guestsParam))
+if (guests.has(guestsParam)) {
     document.getElementById("guests").innerText = "Дорогие " + guests.get(guestsParam) + "!";
+}    
 
 
