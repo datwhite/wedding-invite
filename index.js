@@ -76,5 +76,3 @@ if (guests.has(guestsParam)) {
         dear = "Дорогой "
     document.getElementById("guests").innerText = dear + guests.get(guestsParam) + "!";
 }    
-
-
